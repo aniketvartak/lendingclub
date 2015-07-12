@@ -16,6 +16,8 @@ def ytof(x):
         return 1.
     elif(x.endswith('years')):
         return float(x.strip(" years"))
+    elif(x.endswith('n/a')):
+        return 555.
 
 # Return number of words in a string
 def str2words(s):
